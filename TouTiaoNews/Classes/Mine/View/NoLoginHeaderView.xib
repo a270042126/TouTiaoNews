@@ -83,6 +83,9 @@
                             <integer key="value" value="14"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="gotoLogin:" destination="PqQ-mr-p0u" eventType="touchUpInside" id="Qva-8s-qP1"/>
+                    </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhK-RY-Mpu">
                     <rect key="frame" x="0.0" y="49" width="538" height="66"/>

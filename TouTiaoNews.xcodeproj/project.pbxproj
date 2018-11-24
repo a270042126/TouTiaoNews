@@ -35,7 +35,21 @@
 		636DD0EC21A3CBF300D0E38A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636DD0EA21A3CBF300D0E38A /* LaunchScreen.storyboard */; };
 		636DD0F721A3CBF300D0E38A /* TouTiaoNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636DD0F621A3CBF300D0E38A /* TouTiaoNewsTests.swift */; };
 		636DD10221A3CBF300D0E38A /* TouTiaoNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636DD10121A3CBF300D0E38A /* TouTiaoNewsUITests.swift */; };
+		638F9FB821A90E84006819BF /* MoreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F9FB721A90E84006819BF /* MoreLoginViewController.swift */; };
+		638F9FBA21A9105B006819BF /* MoreLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638F9FB921A9105B006819BF /* MoreLoginViewController.storyboard */; };
+		638F9FBC21A931B5006819BF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F9FBB21A931B5006819BF /* SettingViewController.swift */; };
+		638F9FBF21A933C1006819BF /* settingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 638F9FBE21A933C1006819BF /* settingPlist.plist */; };
+		638F9FC121A934E3006819BF /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F9FC021A934E3006819BF /* SettingModel.swift */; };
+		638F9FC421A93791006819BF /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F9FC221A93791006819BF /* SettingCell.swift */; };
+		638F9FC521A93791006819BF /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638F9FC321A93791006819BF /* SettingCell.xib */; };
+		638F9FC721A94292006819BF /* OfflineDownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F9FC621A94292006819BF /* OfflineDownloadController.swift */; };
+		638F9FCA21A94406006819BF /* OfflineDownlaodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F9FC821A94406006819BF /* OfflineDownlaodCell.swift */; };
+		638F9FCB21A94406006819BF /* OfflineDownlaodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638F9FC921A94406006819BF /* OfflineDownlaodCell.xib */; };
+		638F9FCD21A946C8006819BF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 638F9FCC21A946C8006819BF /* libsqlite3.0.tbd */; };
+		638F9FCF21A9474F006819BF /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F9FCE21A9474F006819BF /* SQLiteManager.swift */; };
+		638F9FD121A94BCF006819BF /* OfflineSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F9FD021A94BCF006819BF /* OfflineSectionHeader.swift */; };
 		63AB36AD21A82EDB006C733E /* HomeNewsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB36AC21A82EDB006C733E /* HomeNewsTitle.swift */; };
+		63CE533921A97904006B9CD9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE533821A97904006B9CD9 /* HomeViewModel.swift */; };
 		63DA894621A6A52D009CC6FC /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63DA894421A6A52D009CC6FC /* default_theme.plist */; };
 		63DA894721A6A52D009CC6FC /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63DA894521A6A52D009CC6FC /* night_theme.plist */; };
 		63DA894921A6FE3F009CC6FC /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA894821A6FE3F009CC6FC /* NoLoginHeaderView.swift */; };
@@ -97,7 +111,21 @@
 		636DD0FD21A3CBF300D0E38A /* TouTiaoNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouTiaoNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		636DD10121A3CBF300D0E38A /* TouTiaoNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouTiaoNewsUITests.swift; sourceTree = "<group>"; };
 		636DD10321A3CBF300D0E38A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638F9FB721A90E84006819BF /* MoreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLoginViewController.swift; sourceTree = "<group>"; };
+		638F9FB921A9105B006819BF /* MoreLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreLoginViewController.storyboard; sourceTree = "<group>"; };
+		638F9FBB21A931B5006819BF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		638F9FBE21A933C1006819BF /* settingPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingPlist.plist; sourceTree = "<group>"; };
+		638F9FC021A934E3006819BF /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		638F9FC221A93791006819BF /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		638F9FC321A93791006819BF /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		638F9FC621A94292006819BF /* OfflineDownloadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDownloadController.swift; sourceTree = "<group>"; };
+		638F9FC821A94406006819BF /* OfflineDownlaodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDownlaodCell.swift; sourceTree = "<group>"; };
+		638F9FC921A94406006819BF /* OfflineDownlaodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfflineDownlaodCell.xib; sourceTree = "<group>"; };
+		638F9FCC21A946C8006819BF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		638F9FCE21A9474F006819BF /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		638F9FD021A94BCF006819BF /* OfflineSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineSectionHeader.swift; sourceTree = "<group>"; };
 		63AB36AC21A82EDB006C733E /* HomeNewsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsTitle.swift; sourceTree = "<group>"; };
+		63CE533821A97904006B9CD9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		63DA894421A6A52D009CC6FC /* default_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_theme.plist; sourceTree = "<group>"; };
 		63DA894521A6A52D009CC6FC /* night_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
 		63DA894821A6FE3F009CC6FC /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
@@ -116,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638F9FCD21A946C8006819BF /* libsqlite3.0.tbd in Frameworks */,
 				58983C91FB8DF879190A590A /* Pods_TouTiaoNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +235,7 @@
 		635C3E0021A3DB9D00E402FD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				63CE533721A97877006B9CD9 /* ViewModel */,
 				635C3E0921A3DCF300E402FD /* Model */,
 				635C3E0821A3DCED00E402FD /* View */,
 				635C3E0721A3DCE700E402FD /* Controller */,
@@ -218,6 +248,7 @@
 			children = (
 				635C3E3721A4591700E402FD /* NetworkTools.swift */,
 				632B0A6A21A7AF5B00B0C9B6 /* ITheme.swift */,
+				638F9FCE21A9474F006819BF /* SQLiteManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -241,7 +272,6 @@
 		635C3E0821A3DCED00E402FD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				63AB36AC21A82EDB006C733E /* HomeNewsTitle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +279,7 @@
 		635C3E0921A3DCF300E402FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63AB36AC21A82EDB006C733E /* HomeNewsTitle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +307,10 @@
 			isa = PBXGroup;
 			children = (
 				635C3E3321A402E500E402FD /* MineViewController.swift */,
+				638F9FB721A90E84006819BF /* MoreLoginViewController.swift */,
+				638F9FB921A9105B006819BF /* MoreLoginViewController.storyboard */,
+				638F9FBB21A931B5006819BF /* SettingViewController.swift */,
+				638F9FC621A94292006819BF /* OfflineDownloadController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				632B0A7821A7DFBB00B0C9B6 /* IConcern.swift */,
+				638F9FC021A934E3006819BF /* SettingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +335,11 @@
 				632B0A7521A7D58D00B0C9B6 /* IFirstSectionCell.xib */,
 				632B0A7A21A7EFF300B0C9B6 /* IOtherCell.swift */,
 				632B0A7B21A7EFF300B0C9B6 /* IOtherCell.xib */,
+				638F9FC221A93791006819BF /* SettingCell.swift */,
+				638F9FC321A93791006819BF /* SettingCell.xib */,
+				638F9FC821A94406006819BF /* OfflineDownlaodCell.swift */,
+				638F9FC921A94406006819BF /* OfflineDownlaodCell.xib */,
+				638F9FD021A94BCF006819BF /* OfflineSectionHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,6 +427,7 @@
 		635C3E1C21A3E83100E402FD /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				638F9FBD21A933B5006819BF /* plist */,
 				63DA894321A6A52D009CC6FC /* Theme */,
 				636DD0E121A3CBF100D0E38A /* AppDelegate.swift */,
 				635C3E1D21A3F04B00E402FD /* Const.swift */,
@@ -525,6 +567,22 @@
 			path = TouTiaoNewsUITests;
 			sourceTree = "<group>";
 		};
+		638F9FBD21A933B5006819BF /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				638F9FBE21A933C1006819BF /* settingPlist.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		63CE533721A97877006B9CD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				63CE533821A97904006B9CD9 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		63DA894321A6A52D009CC6FC /* Theme */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,6 +595,7 @@
 		8455E1A0026BC613B989A02A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				638F9FCC21A946C8006819BF /* libsqlite3.0.tbd */,
 				06B3A28E22C44B2DBCE183AC /* Pods_TouTiaoNews.framework */,
 				AF8DD60DE09383D37B1C2138 /* Pods_TouTiaoNewsTests.framework */,
 				8EDAD93F9DF44F8AA40D9345 /* Pods_TouTiaoNewsUITests.framework */,
@@ -652,14 +711,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638F9FBA21A9105B006819BF /* MoreLoginViewController.storyboard in Resources */,
 				63DA894621A6A52D009CC6FC /* default_theme.plist in Resources */,
 				63DA894721A6A52D009CC6FC /* night_theme.plist in Resources */,
 				632B0A7321A7C85300B0C9B6 /* IConcernCell.xib in Resources */,
 				63DA894B21A6FE5E009CC6FC /* NoLoginHeaderView.xib in Resources */,
+				638F9FBF21A933C1006819BF /* settingPlist.plist in Resources */,
 				632B0A7721A7D58D00B0C9B6 /* IFirstSectionCell.xib in Resources */,
 				636DD0EC21A3CBF300D0E38A /* LaunchScreen.storyboard in Resources */,
 				636DD0E921A3CBF300D0E38A /* Assets.xcassets in Resources */,
 				632B0A7D21A7EFF300B0C9B6 /* IOtherCell.xib in Resources */,
+				638F9FCB21A94406006819BF /* OfflineDownlaodCell.xib in Resources */,
+				638F9FC521A93791006819BF /* SettingCell.xib in Resources */,
 				636DD0E721A3CBF100D0E38A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,9 +799,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TouTiaoNews/Pods-TouTiaoNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -748,9 +814,12 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -788,14 +857,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638F9FCA21A94406006819BF /* OfflineDownlaodCell.swift in Sources */,
 				632B0A7921A7DFBB00B0C9B6 /* IConcern.swift in Sources */,
+				638F9FC721A94292006819BF /* OfflineDownloadController.swift in Sources */,
 				635C3E0B21A3DD1000E402FD /* HomeViewController.swift in Sources */,
+				638F9FD121A94BCF006819BF /* OfflineSectionHeader.swift in Sources */,
 				632B0A7621A7D58D00B0C9B6 /* IFirstSectionCell.swift in Sources */,
+				638F9FB821A90E84006819BF /* MoreLoginViewController.swift in Sources */,
 				632B0A7F21A806DF00B0C9B6 /* IConcernViewModel.swift in Sources */,
 				635C3E3421A402E600E402FD /* MineViewController.swift in Sources */,
 				635C3E0621A3DC0C00E402FD /* UIKit+Extension.swift in Sources */,
 				632B0A7C21A7EFF300B0C9B6 /* IOtherCell.swift in Sources */,
 				635C3E2721A3F69C00E402FD /* WeitoutiaoViewController.swift in Sources */,
+				638F9FCF21A9474F006819BF /* SQLiteManager.swift in Sources */,
+				63CE533921A97904006B9CD9 /* HomeViewModel.swift in Sources */,
 				63DA894921A6FE3F009CC6FC /* NoLoginHeaderView.swift in Sources */,
 				635C3E3221A3FA5500E402FD /* ITabBar.swift in Sources */,
 				635C3E2921A3F6B700E402FD /* HuoshanViewController.swift in Sources */,
@@ -805,7 +880,10 @@
 				632B0A7221A7C85300B0C9B6 /* IConcernCell.swift in Sources */,
 				632B0A6B21A7AF5B00B0C9B6 /* ITheme.swift in Sources */,
 				63AB36AD21A82EDB006C733E /* HomeNewsTitle.swift in Sources */,
+				638F9FC421A93791006819BF /* SettingCell.swift in Sources */,
+				638F9FBC21A931B5006819BF /* SettingViewController.swift in Sources */,
 				636DD0E221A3CBF100D0E38A /* AppDelegate.swift in Sources */,
+				638F9FC121A934E3006819BF /* SettingModel.swift in Sources */,
 				635C3E1E21A3F04B00E402FD /* Const.swift in Sources */,
 				635C3E3821A4591700E402FD /* NetworkTools.swift in Sources */,
 				635C3E3621A43E5500E402FD /* INavigationController.swift in Sources */,
@@ -988,6 +1066,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32VW4RTG7L;
 				INFOPLIST_FILE = TouTiaoNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1008,6 +1087,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32VW4RTG7L;
 				INFOPLIST_FILE = TouTiaoNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

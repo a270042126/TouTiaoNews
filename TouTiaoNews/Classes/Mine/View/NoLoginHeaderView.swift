@@ -9,18 +9,20 @@
 import UIKit
 
 class NoLoginHeaderView: UIView,NibLoadable{
-
-    @IBOutlet private weak var bgImageView: UIImageView!
+    
+    
+    @IBOutlet weak var bgImageView: UIImageView!
     @IBOutlet private weak var mobileBtn: UIButton!
     @IBOutlet private weak var wechatBtn: UIButton!
     @IBOutlet private weak var qqBtn: UIButton!
     @IBOutlet private weak var sinaBtn: UIButton!
-    @IBOutlet private weak var moreLoginBtn: UIButton!
+    @IBOutlet weak var moreLoginBtn: UIButton!
     @IBOutlet private weak var favoriteBtn: UIButton!
     @IBOutlet private weak var historyBtn: UIButton!
     @IBOutlet private weak var dayOrNightBtn: UIButton!
     @IBOutlet private weak var bottomView: UIView!
     @IBOutlet weak var stackView: UIStackView!
+    var loginCallBack: (() -> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,6 +30,7 @@ class NoLoginHeaderView: UIView,NibLoadable{
         setupUI()
     }
     
+  
 }
 
 extension NoLoginHeaderView{
@@ -62,5 +65,9 @@ extension NoLoginHeaderView{
         UserDefaults.standard.set(sender.isSelected, forKey: isNight)
         ITheme.switchNight(sender.isSelected)
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: DayOrNightButtonClicked), object: sender.isSelected)
+    }
+    
+    @IBAction func gotoLogin(_ sender: UIButton) {
+        loginCallBack?()
     }
 }

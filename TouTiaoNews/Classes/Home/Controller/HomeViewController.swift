@@ -14,6 +14,12 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.orange
+        let homeVM = HomeViewModel()
+        homeVM.loadHomeNewsTitleData {
+           let titles = homeVM.homeNewsTitles
+            NewsTitleTable().insert(titles)
+        }
+        
     }
     
 

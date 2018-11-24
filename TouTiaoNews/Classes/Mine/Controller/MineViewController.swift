@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class MineViewController: UITableViewController {
     
@@ -15,7 +17,7 @@ class MineViewController: UITableViewController {
     // 存储我的关注数据
     fileprivate lazy var concerns = [IConcern]()
     
-    
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +47,15 @@ extension MineViewController{
     fileprivate func setupUI(){
         tableView.tableFooterView = UIView()
         tableView.tableHeaderView = headerView
+        
+        headerView.moreLoginBtn.rx.tap.subscribe(onNext: { [weak self] in
+            let moreLoginVC = MoreLoginViewController.loadStoryboard()
+            moreLoginVC.modalSize = (width: .full, height: .custom(size: Float(screenHeight - (isIPhoneX ? 44 : 20))))
+            self!.present(moreLoginVC, animated: true, completion: nil)
+        }).disposed(by: disposeBag)
+//        headerView.loginCallBack = { [unowned self] in
+//            self.present(MoreLoginViewController.loadStoryboard(), animated: true, completion: nil)
+//        }
         tableView.theme_backgroundColor = "colors.tableViewBackgroundColor"
         tableView.separatorColor = .none
         tableView?.ym_registerCell(cell: IFirstSectionCell.self)
@@ -111,6 +122,26 @@ extension MineViewController{
             let myCellModel = sections[indexPath.section][indexPath.row]
             cell.cellModel = myCellModel
             return cell
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.section == 3 && indexPath.row == 1{
+            let settingVC = SettingViewController()
+            settingVC.navigationItem.title = "设置"
+            navigationController?.pushViewController(settingVC, animated: true)
+        }
+        
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let offsetY = scrollView.contentOffset.y
+        if offsetY < 0{
+            let totalOffset = kMyHeaderViewHeight + abs(offsetY)
+            let f = totalOffset / kMyHeaderViewHeight
+            headerView.bgImageView.frame = CGRect(x: -screenWidth * (f - 1) * 0.5, y: offsetY, width: screenWidth * f, height: totalOffset)
         }
     }
 }

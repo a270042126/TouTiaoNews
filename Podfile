@@ -15,6 +15,10 @@ target 'TouTiaoNews' do
   pod 'SwiftTheme'
   pod 'HandyJSON', '~> 4.2.0'
   pod 'RxSwift'
+  pod 'IBAnimatable'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'SQLite.swift'
   
   target 'TouTiaoNewsTests' do
     inherit! :search_paths
