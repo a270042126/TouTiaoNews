@@ -34,10 +34,10 @@ extension ITabBarViewController{
     private func addChildViewControllers() {
         setChildViewController(HomeViewController(), title: "首页", imageName: "home")
         setChildViewController(VideoViewController(), title: "西瓜视频", imageName: "video")
-        //setChildViewController(RedPackageViewController(), title: "", imageName: "redpackage")
+        setChildViewController(RedPackageViewController(), title: "", imageName: "redpackage")
         setChildViewController(WeitoutiaoViewController(), title: "微头条", imageName: "weitoutiao")
         setChildViewController(MineViewController(), title: "小视频", imageName: "huoshan")
-        setValue(ITabBar(), forKey: "tabBar")
+      //  setValue(ITabBar(), forKey: "tabBar")
     }
     
     private func setChildViewController(_ childController: UIViewController, title: String, imageName: String){

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ChannelRecommendReusableView" customModule="TouTiaoNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRF-zR-mtR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smo-Rz-DWx">
+                            <rect key="frame" x="10" y="0.0" width="62" height="50"/>
+                            <state key="normal" title="频道推荐">
+                                <color key="titleColor" red="0.17254901959999999" green="0.18039215689999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ql-xi-AVf">
+                            <rect key="frame" x="82" y="5" width="92" height="45"/>
+                            <state key="normal" title="点击添加频道">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4ql-xi-AVf" firstAttribute="top" secondItem="MRF-zR-mtR" secondAttribute="top" constant="5" id="8Yc-Uw-Chi"/>
+                        <constraint firstAttribute="bottom" secondItem="smo-Rz-DWx" secondAttribute="bottom" id="HAt-NQ-uCc"/>
+                        <constraint firstItem="4ql-xi-AVf" firstAttribute="leading" secondItem="smo-Rz-DWx" secondAttribute="trailing" constant="10" id="Rh8-7w-J2x"/>
+                        <constraint firstItem="smo-Rz-DWx" firstAttribute="leading" secondItem="MRF-zR-mtR" secondAttribute="leading" constant="10" id="Sgw-3K-wEj"/>
+                        <constraint firstAttribute="bottom" secondItem="4ql-xi-AVf" secondAttribute="bottom" id="XpB-W6-JFP"/>
+                        <constraint firstItem="smo-Rz-DWx" firstAttribute="top" secondItem="MRF-zR-mtR" secondAttribute="top" id="l8Z-I8-ybv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="MRF-zR-mtR" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="YLY-8x-bCD"/>
+                <constraint firstAttribute="bottom" secondItem="MRF-zR-mtR" secondAttribute="bottom" id="as8-Zs-cxQ"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="MRF-zR-mtR" secondAttribute="trailing" id="eTU-pb-uUc"/>
+                <constraint firstItem="MRF-zR-mtR" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="leZ-Sa-8h9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+        </collectionReusableView>
+    </objects>
+</document>

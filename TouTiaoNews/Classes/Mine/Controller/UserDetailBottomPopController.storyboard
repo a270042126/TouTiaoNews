@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Detail Bottom Pop Controller-->
+        <scene sceneID="joy-m6-Flw">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailBottomPopController" id="ZdE-9x-qD8" customClass="UserDetailBottomPopController" customModule="TouTiaoNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTl-rk-LiN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_118x58_" translatesAutoresizingMaskIntoConstraints="NO" id="fPy-0Y-n84">
+                                <rect key="frame" x="-10" y="20" width="395" height="647"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Ww-5B-rtQ">
+                                <rect key="frame" x="0.0" y="30" width="375" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZdE-9x-qD8" id="pGc-TM-MWk"/>
+                                    <outlet property="delegate" destination="ZdE-9x-qD8" id="40Y-aU-baf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QDw-rr-3VR" firstAttribute="trailing" secondItem="4Ww-5B-rtQ" secondAttribute="trailing" id="1lu-Mc-gcb"/>
+                            <constraint firstItem="4Ww-5B-rtQ" firstAttribute="top" secondItem="QDw-rr-3VR" secondAttribute="top" constant="10" id="2eT-Z9-19b"/>
+                            <constraint firstItem="4Ww-5B-rtQ" firstAttribute="leading" secondItem="QDw-rr-3VR" secondAttribute="leading" id="8gr-Ck-cEo"/>
+                            <constraint firstItem="QDw-rr-3VR" firstAttribute="bottom" secondItem="fPy-0Y-n84" secondAttribute="bottom" id="PPV-7Q-fEF"/>
+                            <constraint firstItem="QDw-rr-3VR" firstAttribute="trailing" secondItem="fPy-0Y-n84" secondAttribute="trailing" constant="-10" id="QXT-pD-03Z"/>
+                            <constraint firstItem="fPy-0Y-n84" firstAttribute="top" secondItem="QDw-rr-3VR" secondAttribute="top" id="TDc-2t-DPB"/>
+                            <constraint firstItem="fPy-0Y-n84" firstAttribute="leading" secondItem="QDw-rr-3VR" secondAttribute="leading" constant="-10" id="WDV-h1-UJQ"/>
+                            <constraint firstItem="QDw-rr-3VR" firstAttribute="bottom" secondItem="4Ww-5B-rtQ" secondAttribute="bottom" constant="15" id="iOu-fc-WW1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QDw-rr-3VR"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="4Ww-5B-rtQ" id="xbn-nZ-7VR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvI-ui-h3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popup_118x58_" width="118" height="58"/>
+    </resources>
+</document>

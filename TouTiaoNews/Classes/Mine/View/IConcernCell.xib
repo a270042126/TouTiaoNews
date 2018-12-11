@@ -28,15 +28,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W17-AN-GjR">
-                        <rect key="frame" x="29.5" y="17.5" width="40" height="46.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W17-AN-GjR" customClass="AnimatableImageView" customModule="IBAnimatable">
+                        <rect key="frame" x="29.5" y="24" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="W17-AN-GjR" secondAttribute="height" multiplier="44:51" id="5MY-f6-hWF"/>
+                            <constraint firstAttribute="width" secondItem="W17-AN-GjR" secondAttribute="height" id="5MY-f6-hWF"/>
                             <constraint firstAttribute="width" constant="40" id="a63-gj-86n"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8n-M4-87P">
-                        <rect key="frame" x="57.5" y="19.5" width="10" height="10"/>
+                        <rect key="frame" x="57.5" y="26" width="10" height="10"/>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.38823529410000002" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="Mlx-JJ-hCD"/>

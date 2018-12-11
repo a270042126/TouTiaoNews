@@ -28,4 +28,14 @@ class NetworkTools {
             finishedCallback(result)
         }
     }
+    
+    class func requestString(url: String, finishedCallback :  @escaping (_ result : Any) -> ()){
+        Alamofire.request(url).responseString { (response) in
+            guard let result = response.result.value else {
+                print(response.result.error!)
+                return
+            }
+            finishedCallback(result)
+        }
+    }
 }

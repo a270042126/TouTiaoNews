@@ -19,7 +19,12 @@ target 'TouTiaoNews' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SQLite.swift'
-  
+  pod 'SVProgressHUD'
+  pod 'SnapKit'
+  pod 'MJRefresh'
+  pod 'lottie-ios'
+  pod 'VGPlayer', :path => 'VGPlayer-master'
+ 
   target 'TouTiaoNewsTests' do
     inherit! :search_paths
     # Pods for testing

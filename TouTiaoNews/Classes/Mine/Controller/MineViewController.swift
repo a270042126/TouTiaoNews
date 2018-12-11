@@ -115,7 +115,11 @@ extension MineViewController{
             cell.collectionView.isHidden = (concerns.count == 0 || concerns.count == 1)
             if concerns.count == 1{cell.iConcern = concerns[0]}
             if concerns.count > 1{cell.iConcerns = concerns}
-            
+            cell.iConcernSelected = {[weak self] in
+                let userDetailVC = UserDetailViewController.loadStoryboard()
+                userDetailVC.userId = $0.userid
+                self?.navigationController?.pushViewController(userDetailVC, animated: true)
+            }
             return cell
         }else{
             let cell = tableView.ym_dequeueReusableCell(indexPath: indexPath) as IOtherCell

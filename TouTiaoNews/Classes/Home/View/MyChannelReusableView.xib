@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="MyChannelReusableView" customModule="TouTiaoNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwG-qv-E7z">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gs-53-usU">
+                            <rect key="frame" x="15" y="0.0" width="62" height="50"/>
+                            <state key="normal" title="我的频道">
+                                <color key="titleColor" red="0.17254901959999999" green="0.18039215689999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYI-5v-Nkz">
+                            <rect key="frame" x="87" y="5" width="92" height="45"/>
+                            <state key="normal" title="点击进入频道">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE4-2b-NYA">
+                            <rect key="frame" x="265" y="13" width="55" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="fkp-LQ-7MV"/>
+                                <constraint firstAttribute="width" constant="55" id="icE-W3-Phj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="编辑">
+                                <color key="titleColor" red="0.90196078430000004" green="0.3921568627" blue="0.37254901959999998" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="editButtonClicked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="gc4-LB-8XR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mE4-2b-NYA" secondAttribute="trailing" id="3Cs-eM-m84"/>
+                        <constraint firstItem="8gs-53-usU" firstAttribute="top" secondItem="IwG-qv-E7z" secondAttribute="top" id="6fe-GO-xvG"/>
+                        <constraint firstAttribute="bottom" secondItem="aYI-5v-Nkz" secondAttribute="bottom" id="8S8-4H-Kx1"/>
+                        <constraint firstItem="aYI-5v-Nkz" firstAttribute="top" secondItem="IwG-qv-E7z" secondAttribute="top" constant="5" id="8TQ-Yn-40T"/>
+                        <constraint firstItem="8gs-53-usU" firstAttribute="leading" secondItem="IwG-qv-E7z" secondAttribute="leading" constant="15" id="OdY-pX-TkG"/>
+                        <constraint firstAttribute="bottom" secondItem="8gs-53-usU" secondAttribute="bottom" id="R0b-kA-vvD"/>
+                        <constraint firstItem="mE4-2b-NYA" firstAttribute="centerY" secondItem="IwG-qv-E7z" secondAttribute="centerY" id="ifl-9A-OD2"/>
+                        <constraint firstItem="aYI-5v-Nkz" firstAttribute="leading" secondItem="8gs-53-usU" secondAttribute="trailing" constant="10" id="lLQ-95-INv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IwG-qv-E7z" secondAttribute="bottom" id="Gnh-Ml-Whz"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="IwG-qv-E7z" secondAttribute="trailing" id="qFh-uW-Mzc"/>
+                <constraint firstItem="IwG-qv-E7z" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="r1B-hP-CYU"/>
+                <constraint firstItem="IwG-qv-E7z" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="zxt-OR-1vK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="editChannelButton" destination="mE4-2b-NYA" id="EYU-bN-qUE"/>
+                <outlet property="subtitleLabel" destination="aYI-5v-Nkz" id="seU-bj-Zqs"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
